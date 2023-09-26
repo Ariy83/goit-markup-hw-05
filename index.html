@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header class="header">
     <div class="container header-container">
       <nav class="nav">
@@ -48,12 +49,14 @@
   </header>
 
   <main>
+    <!-- SECTION 1 -->
     <section class="hero-section section">
       <div class="hero-container container">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
         <button class="hero-btn" type="button" data-modal-open>Order Service</button>
       </div>
     </section>
+    <!-- SECTION 2 -->
     <section class="features-section section">
       <div class="features-container container">
         <h2 class="visually-hidden">features</h2>
@@ -109,6 +112,7 @@
         </ul>
       </div>
     </section>
+    <!-- SECTION 3 -->
     <section class="what-section section">
       <div class="what-container container">
         <h2 class="what-title">What are we doing</h2>
@@ -125,6 +129,7 @@
         </ul>
       </div>
     </section>
+    <!-- SECTION 4 -->
     <section class="team-cards-section section">
       <div class="team-cards-container container">
         <h2 class="what-title">Our Team</h2>
@@ -296,6 +301,7 @@
         </ul>
       </div>
     </section>
+    <!-- SECTION 5 -->
     <section class="customers-section section">
       <div class="container">
         <h2 class="what-title">Customers</h2>
@@ -347,6 +353,7 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container container">
       <div class="footer-logo-container">
@@ -393,6 +400,7 @@
     </div>
   </footer>
 
+  <!-- MODAL WINDOW -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="btn-close" type="button" data-modal-close>
@@ -400,8 +408,66 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <p class="form-title">Leave your contacts and we will call you back</p>
+      <form class="form-main" name="order_service" autocomplete="on" method="post">
+        <div class="input-name-wrap">
+          <label class="input-label" for="form_name">Name</label>
+          <div class="input-name-box">
+            <input class="input-name" type="text" id="form_name">
+            <svg class="input-name-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="input-name-wrap">
+          <label class="input-label" for="form_tel">Phone</label>
+          <div class="input-name-box">
+            <input class="input-name" type="tel" id="form_tel">
+            <svg class="input-name-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="input-name-wrap">
+          <label class="input-label" for="form_email">Email</label>
+          <div class="input-name-box">
+            <input class="input-name" type="email" id="form_email">
+            <svg class="input-name-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="input-name-wrap">
+          <label class="input-label" for="form_comment">Comment</label>
+          <div class="comment">
+            <textarea class="input-comment" name="comment" rows="8" id="form_comment"
+              placeholder="Text input"></textarea>
+          </div>
+        </div>
+
+        <div class="form-checkbox">
+          <input class="form-checkbox visually-hidden" type="checkbox" name="user_check" id="user_check" />
+          <label class="input-label form-label-checkbox" for="user_check">
+            <span class="form-span">
+              <svg class="form-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="form-link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="link Privacy Policy">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button class="hero-btn" type="submit">Send</button>
+      </form>
     </div>
   </div>
+
+  <!-- JS -->
   <script src="./js/modal.js"></script>
 </body>
 
