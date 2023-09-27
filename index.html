@@ -400,14 +400,16 @@
       <div class="footer-form-box">
         <p class="footer-subscribe">Subscribe</p>
         <form class="footer-form">
-          <label class="visually-hidden" for="footer-email">Subscribe form</label>
-          <input class="footer-email" type="email" name="footer-email" id="footer-email" placeholder="E-mail" required>
+          <label class="footer-label" for="footer-email">
+            <input class="footer-email" type="email" name="footer-email" id="footer-email" placeholder="E-mail"
+              required>
+          </label>
+          <button class="hero-btn footer-btn" type="submit">Subscribe
+            <span><svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg></span>
+          </button>
         </form>
-        <button class="hero-btn footer-btn" type="submit">Subscribe
-          <span><svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg></span>
-        </button>
       </div>
 
     </div>
@@ -422,21 +424,21 @@
         </svg>
       </button>
       <p class="form-title">Leave your contacts and we will call you back</p>
-      <form class="form-main" name="order_service" autocomplete="on" method="post">
+      <form class="form-main" name="order-service" autocomplete="on" method="post">
         <div class="input-name-wrap">
-          <label class="input-label" for="form_name">Name</label>
+          <label class="input-label" for="form-name">Name</label>
           <div class="input-name-box">
-            <input class="input-name" type="text" id="form_name" required>
-            <svg class="input-name-icon" width="18" height="18">
+            <input class="input-name" type="text" id="form-name" required>
+            <svg class="input-name-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-name"></use>
             </svg>
           </div>
         </div>
 
         <div class="input-name-wrap">
-          <label class="input-label" for="form_tel">Phone</label>
+          <label class="input-label" for="form-tel">Phone</label>
           <div class="input-name-box">
-            <input class="input-name" type="tel" id="form_tel">
+            <input class="input-name" type="tel" id="form-tel" required>
             <svg class="input-name-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -444,26 +446,24 @@
         </div>
 
         <div class="input-name-wrap">
-          <label class="input-label" for="form_email">Email</label>
+          <label class="input-label" for="form-email">Email</label>
           <div class="input-name-box">
-            <input class="input-name" type="email" id="form_email" required>
+            <input class="input-name" type="email" id="form-email" required>
             <svg class="input-name-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
         </div>
 
-        <div class="input-name-wrap">
-          <label class="input-label" for="form_comment">Comment</label>
-          <div class="comment">
-            <textarea class="input-comment" name="comment" rows="8" id="form_comment" required
-              placeholder="Text input"></textarea>
-          </div>
+        <div class="input-comment-wrap">
+          <label class="input-label" for="form-comment">Comment</label>
+          <textarea class="input-comment" name="comment" rows="8" id="form-comment" required
+            placeholder="Text input"></textarea>
         </div>
 
         <div class="form-checkbox">
-          <input class="form-checkbox visually-hidden" type="checkbox" name="user_check" id="user_check" />
-          <label class="input-label form-label-checkbox" for="user_check">
+          <input class="form-checkbox visually-hidden" type="checkbox" name="user-check" id="user-check" value="true" />
+          <label class="input-label form-label-checkbox" for="user-check">
             <span class="form-span">
               <svg class="form-svg" width="10" height="8">
                 <use href="./images/icons.svg#icon-checkbox-click"></use>
