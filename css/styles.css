@@ -652,7 +652,7 @@ img {
   padding: 8px 16px;
   width: 100%;
   max-width: 360px;
-  min-height: 120px;
+  height: 120px;
   resize: none;
   font-size: 12px;
   line-height: 1.17;
